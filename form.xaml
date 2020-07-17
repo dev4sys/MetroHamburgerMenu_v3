@@ -120,10 +120,6 @@
 
         </Grid.Resources>
         
-		
-		
-		
-		
 		<!--
         <Controls:HamburgerMenu x:Name="HamburgerMenuControl"
                                 Foreground="White"
@@ -134,11 +130,10 @@
                                 DisplayMode="CompactInline"
 								> -->
         
-		
-		
 		<!--  
 		Removed this part as it will be managed in the script: ItemInvoked="HamburgerMenuControl_OnItemInvoked" 
-		Style="{StaticResource MahApps.Styles.HamburgerMenu.CreatorsUpdate}" If you want to use CreatorsUpdate Style 
+		If you want to customize the width of the navigation pane, add this attribute: OpenPaneLength="400"
+		If you want to use CreatorsUpdate Style: add Style="{StaticResource MahApps.Styles.HamburgerMenu.CreatorsUpdate}" and remove the foreground (header color) in Content  
 		-->
 		<Controls:HamburgerMenu x:Name="HamburgerMenuControl"
                           DisplayMode="CompactOverlay"
@@ -147,7 +142,6 @@
                           OptionsItemTemplate="{StaticResource HamburgerOptionsMenuItem}"
 						  SelectedIndex="0"
 						  IsPaneOpen="False"
-						  OpenPaneLength="400"
 						  VerticalScrollBarOnLeftSide="False"
 						  >
 		
